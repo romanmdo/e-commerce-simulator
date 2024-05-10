@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'font1', sans-serif; }
+
+@font-face {
+  font-family: 'font1';
+  src: url("../../fonts/Akira Expanded Demo.otf") format("truetype"); }
 :root {
   --primary: #E00000;
   --primary-dark: #280000;
@@ -13,7 +24,10 @@
   --gray-menu-button-hover: #232323;
   --navbar-height: 4rem;
   --gray-text-hover: #8F8F8F;
-  --gray-icon: #A0A0A0; }
+  --gray-icon: #A0A0A0;
+  --bg: #060D23;
+  --btn-bg: #280000;
+  --glow-size: 0.5rem; }
 
 .papa {
   display: flex;
@@ -21,20 +35,23 @@
   flex-wrap: wrap; }
 
 .hijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   max-width: 22%;
   height: auto;
   padding: 1%;
   margin-left: 2%;
   margin-top: 1%;
   color: var(--text);
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1em;
   background-color: var(--primary-dark);
   opacity: 70%;
   border: 2px var(--primary) solid; }
 
 .hijo-precio {
-  font-size: 30px; }
+  font-size: 1.2rem; }
 
 .hijo img {
   max-width: 80%;
@@ -46,84 +63,64 @@
   transform: scale(1.15); }
 
 /* ### ANIMATION TEST ### */
-/*
-:root {
-    --bg: #060D23;
-    --btn-bg: #280000;
-    --glow-size: 0.5rem;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .button-glow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  transition: all 0.5s; }
 
-    text-decoration: none;
-    user-select: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: relative;
-    z-index: 0;
-
-    transition: all 0.5s;
-}
+.button-glow h1 {
+  display: block; }
 
 .button-glow:before {
-    content: '';
-    background: linear-gradient(to right, #B881FF, #A963F7,
-            #8bff5d, #ffc300, #B881FF, #A963F7,
-            #8bff5d, #ffc300, #B881FF);
-    position: absolute;
-    background-size: 300%;
-    z-index: -1;
-    filter: blur(var(--glow-size));
-    width: calc(100% + var(--glow-size));
-    height: calc(100% + var(--glow-size));
-    opacity: 0;
-    border-radius: var(--border-radius);
-    animation: glow 25s alternate infinite;
-    transition: opacity .5s linear;
-}
+  content: '';
+  background: linear-gradient(to right, #B881FF, #A963F7, #8bff5d, #ffc300, #B881FF, #A963F7, #8bff5d, #ffc300, #B881FF);
+  position: absolute;
+  background-size: 300%;
+  z-index: -1;
+  filter: blur(var(--glow-size));
+  width: calc(100% + var(--glow-size));
+  height: calc(100% + var(--glow-size));
+  opacity: 0;
+  border-radius: var(--border-radius);
+  animation: glow 25s alternate infinite;
+  transition: opacity .5s linear; }
 
 .button-glow:active {
-    background: var(--btn-bg);
-}
+  background: var(--btn-bg); }
 
 .button-glow:hover:before {
-    opacity: 1;
-}
+  opacity: 1; }
 
 .button-glow:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--btn-bg);
-    left: 0;
-    top: 0;
-}
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-bg);
+  left: 0;
+  top: 0; }
 
 @keyframes glow {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 300% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-*/
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 300% 0; }
+  100% {
+    background-position: 0 0; } }
+@media only screen and (max-width: 720px) {
+  .hijo {
+    max-width: 100%;
+    margin: 3% auto;
+    text-align: center;
+    height: auto; }
+    .hijo .hijo img {
+      max-width: 100%;
+      height: auto;
+      margin: 5% 5%; } }
 
 /*# sourceMappingURL=section.css.map */

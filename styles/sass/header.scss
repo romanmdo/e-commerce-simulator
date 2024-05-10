@@ -58,14 +58,8 @@ body {
     align-items: center;
 }
 
-.logo {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
-    height: 4rem;
+    max-width: 100%;
 }
 
 .navigation {
