@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary: #E00000;
+    --primary-dark: #280000;
+    --primary-darker: #700b0b;
+    --border-primary: #101010;
+    --text: #ffffff;
+    --background: #1f1f1f;
+    --secondary: #2E2E2E;
+    --gray-border: #3E3E3E;
+    --gray-border-hover: #505050;
+    --gray-menu-button: #7E7E7E;
+    --gray-menu-button-hover: #232323;
+    --navbar-height: 4rem;
+    --gray-text-hover: #8F8F8F;
+    --gray-icon: #A0A0A0;
+
+}
+
+.papa{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hijo{ 
+    max-width: 22%;
+    height: auto;
+    
+
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 1%;
+
+    color: var(--text);
+    font-weight: bold;
+    font-size: 0.9rem; 
+
+    background-color: var(--primary-dark); 
+    opacity: 70%;
+    border: 2px var(--primary) solid;
+}
+
+.hijo-precio{
+    font-size: 30px;
+}
+
+.hijo img{
+    max-width: 80%;
+    height: auto;
+    margin: 5% 5%;
+    transition: all 0.2s ease-in-out;
+}
+
+.hijo img:hover {
+    transform: scale(1.15);
+}
+
+/* ### ANIMATION TEST ### */
+/*
+:root {
+    --bg: #060D23;
+    --btn-bg: #280000;
+    --glow-size: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.button-glow {
+
+    text-decoration: none;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+
+    transition: all 0.5s;
+}
+
+.button-glow:before {
+    content: '';
+    background: linear-gradient(to right, #B881FF, #A963F7,
+            #8bff5d, #ffc300, #B881FF, #A963F7,
+            #8bff5d, #ffc300, #B881FF);
+    position: absolute;
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(var(--glow-size));
+    width: calc(100% + var(--glow-size));
+    height: calc(100% + var(--glow-size));
+    opacity: 0;
+    border-radius: var(--border-radius);
+    animation: glow 25s alternate infinite;
+    transition: opacity .5s linear;
+}
+
+.button-glow:active {
+    background: var(--btn-bg);
+}
+
+.button-glow:hover:before {
+    opacity: 1;
+}
+
+.button-glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--btn-bg);
+    left: 0;
+    top: 0;
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+*/
