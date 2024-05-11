@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 :root {
     --primary: #E00000;
     --primary-dark: #280000;
@@ -15,6 +13,11 @@
     --gray-text-hover: #8F8F8F;
     --gray-icon: #A0A0A0;
 
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('../../fonts/Roboto-Medium.ttf') format('truetype'); 
 }
 
 * {
@@ -58,8 +61,14 @@ body {
     align-items: center;
 }
 
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    max-width: 100%;
+    height: 4rem;
 }
 
 .navigation {
