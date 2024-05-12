@@ -5,11 +5,12 @@
     margin: 0;
     padding: 0;
     font-family: 'font1', sans-serif; 
+    font-weight: bold;
 }
 
 :root {
     --primary: #E00000;
-    --primary-dark: #280000;
+    --primary-dark: #270808;
     --primary-darker: #700b0b;
     --border-primary: #101010;
     --text: #ffffff;
@@ -29,7 +30,7 @@
 }
 
 .papa{ 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -39,31 +40,27 @@
     flex-direction: column;
     align-items: center; 
     text-align: center;
-
-    max-width: 22%;
+    max-width: 20%;
     height: auto;
-
     padding: 1%;
-    margin-left: 2%;
+    margin-left: 4%;
     margin-top: 1%;
-
     color: var(--text);
-
     font-size: 1em; 
-
     background-color: var(--primary-dark); 
-    opacity: 70%;
+    opacity: 80%;
     border: 2px var(--primary) solid;
 }
 
 .hijo-precio{
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 .hijo img{
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     margin: 5% 5%;
+    opacity: 60%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -71,23 +68,18 @@
     transform: scale(1.15);
 }
 
-/* ### ANIMATION TEST ### */
-
 .button-glow {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     color: #fff;
     position: relative;
     z-index: 0;
-
     transition: all 0.5s;
 }
 
 .button-glow h1{
     display: block;
-
 }
 
 .button-glow:before {
@@ -108,7 +100,6 @@
 }
 
 .button-glow:active {
-    
     background: var(--btn-bg);
 }
 
@@ -117,7 +108,6 @@
 }
 
 .button-glow:after {
-    
     z-index: -1;
     content: '';
     position: absolute;
@@ -156,3 +146,4 @@
         }
     }
 }
+
