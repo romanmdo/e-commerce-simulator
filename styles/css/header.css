@@ -1,7 +1,8 @@
 :root {
   --primary: #E00000;
-  --primary-dark: #280000;
+  --primary-dark: #270808;
   --primary-darker: #700b0b;
+  --border-primary: #101010;
   --text: #ffffff;
   --background: #1f1f1f;
   --secondary: #2E2E2E;
@@ -11,7 +12,10 @@
   --gray-menu-button-hover: #232323;
   --navbar-height: 4rem;
   --gray-text-hover: #8F8F8F;
-  --gray-icon: #A0A0A0; }
+  --gray-icon: #A0A0A0;
+  --bg: #060D23;
+  --btn-bg: #280000;
+  --glow-size: 0.5rem; }
 
 @font-face {
   font-family: 'font1';
@@ -26,7 +30,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: var(--background); }
+  background-color: var(--background);
+  overflow-x: hidden; }
 
 .header {
   width: 100vw;

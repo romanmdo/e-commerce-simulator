@@ -1,0 +1,39 @@
+.footer {
+    color: var(--text);
+    display: flex;
+    background-color: #111f1f1f;
+    margin-top: 3%;
+    max-width: 100%;
+    padding: 5%;
+    border: #2E2E2E 1px solid;
+}
+
+.footer-faq{
+    color: #666666;
+
+    //border: 5px red solid;
+}
+
+.footer div h6{
+    color: #666666;
+    opacity: 50%;
+}
+
+.footer-img{
+    display: inline-flex;
+    max-width: 3%;
+    margin-top: 2%;
+    opacity: 50%;
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(100%);
+    transition: all 0.3s ease;
+}
+
+.footer-img:hover{
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(120%) contrast(100%);
+    transform: scale(1.2);
+}
+
+.footer a{
+    margin-left: 2%;
+    color: var(--text);
+}
