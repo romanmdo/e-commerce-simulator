@@ -8,14 +8,13 @@
   font-weight: bold; }
 
 :root {
-  --background: #1F2336;
-  --accent: #932424;
-  --primary: #E00000;
-  --primary-dark: #270808;
-  --primary-darker: #700b0b;
-  --border-primary: #101010;
+  --background: #17223b;
+  --primary: #0f5aa1;
+  --primary-dark: #17223b;
+  --botom-bg: #0a152f;
+  --accent: #5d88a4;
+  --border-primary: #eeecec;
   --text: #ffffff;
-  --background: #1f1f1f;
   --secondary: #2E2E2E;
   --gray-border: #3E3E3E;
   --gray-border-hover: #505050;
@@ -25,8 +24,16 @@
   --gray-text-hover: #8F8F8F;
   --gray-icon: #A0A0A0;
   --bg: #060D23;
-  --btn-bg: #280000;
   --glow-size: 0.5rem; }
+
+.text {
+  margin-top: 1%;
+  margin-left: 1%;
+  color: white;
+  transition: all 0.2s ease-in-out; }
+
+.text:hover {
+  color: var(--primary); }
 
 .papa {
   display: inline-flex;
@@ -43,14 +50,21 @@
   padding: 1%;
   margin-left: 4%;
   margin-top: 2%;
+  background-color: var(--bg);
   color: var(--text);
   font-size: 1em;
-  background-color: var(--primary-dark);
-  opacity: 80%;
+  opacity: 100%;
   border: 2px var(--primary) solid; }
 
 .hijo-precio {
   font-size: 1.2rem; }
+
+.hijo div h1 {
+  margin-top: 10%; }
+
+.hijo div img {
+  max-width: 20%;
+  height: auto; }
 
 .hijo img {
   max-width: 60%;
@@ -89,7 +103,7 @@
   transition: opacity .5s linear; }
 
 .button-glow:active {
-  background: var(--btn-bg); }
+  background: var(--botom-bg); }
 
 .button-glow:hover:before {
   opacity: 1; }
@@ -100,7 +114,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--btn-bg);
+  background: var(--botom-bg);
   left: 0;
   top: 0; }
 
@@ -122,9 +136,11 @@
       height: auto;
       margin: 5% 5%; } }
 .cta-button {
-  outline: 1px solid;
-  color: white;
-  outline-color: white;
+  /*
+      outline: 1px solid;
+      color: white;
+      outline-color: white;
+  */
   margin-top: 2%;
   padding: 5%;
   cursor: pointer;
@@ -136,7 +152,8 @@
 
 .cta-button:hover {
   box-shadow: 0 0 0 2px var(--accent);
-  outline-color: rgba(255, 255, 255, 0);
+  background-color: var(--background2);
+  outline-color: #490cff;
   outline-offset: 15px;
   color: var(--accent); }
 
