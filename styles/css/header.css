@@ -29,7 +29,7 @@ body {
   overflow-x: hidden; }
 
 .header {
-  width: 100vw;
+  max-width: 100%;
   border-bottom: 1px solid var(--gray-border);
   height: var(--navbar-height);
   display: flex;
@@ -165,10 +165,6 @@ body {
   background-color: var(--secondary-background);
   border-radius: 0.3rem; }
 
-/*.icon-wrapper svg {
-    color: var(--gray-text-hover);
-}
-*/
 .list-items-with-description li:hover svg {
   color: var(--text); }
 
@@ -189,7 +185,7 @@ body {
   color: var(--text);
   gap: 0.5rem; }
 
-.item-title h3 {
+.item-title h1 {
   font-weight: 500;
   font-size: 14px;
   color: var(--text);
@@ -247,7 +243,10 @@ body {
   cursor: pointer;
   background-color: transparent; }
 
-@media (max-width: 44rem) {
+.logoNav {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
   .hide {
     display: none; }
 
@@ -272,6 +271,17 @@ body {
   .burger-menu svg {
     height: 1.5rem;
     stroke: var(--gray-menu-button);
-    width: 1.5rem; } }
+    width: 1.5rem; }
+
+  .navigation.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    max-width: 100%;
+    background-color: var(--background);
+    padding: 5%;
+    border: var(--primary) 1px solid; } }
 
 /*# sourceMappingURL=header.css.map */

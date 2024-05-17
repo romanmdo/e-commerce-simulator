@@ -1,5 +1,4 @@
 :root {
-
     --text: #ffffff;
     --background: #1f1f1f;
     --secondary: #2E2E2E;
@@ -12,7 +11,6 @@
     --gray-icon: #A0A0A0;
     --bg: #060D23;
     --glow-size: 0.5rem;
-
 }
 
 @font-face {
@@ -25,7 +23,6 @@
     font-optical-sizing: auto;
     font-style: normal; 
     font-size: 16px;
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +34,7 @@ body {
 }
 
 .header {
-    width: 100vw;
+    max-width: 100%;
     border-bottom: 1px solid var(--gray-border);
     height: var(--navbar-height);
     display: flex;
@@ -130,7 +127,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-
 .navigation>li:hover>button svg {
     fill: var(--primary);
     transform: rotate(0.5turn);
@@ -144,7 +140,6 @@ body {
     background-color: var(--background);
     display: block;
 }
-
 
 @keyframes fadeIn {
     from {
@@ -199,11 +194,6 @@ body {
     border-radius: 0.3rem;
 }
 
-/*.icon-wrapper svg {
-    color: var(--gray-text-hover);
-}
-*/
-
 .list-items-with-description li:hover svg {
     color: var(--text);
 }
@@ -222,20 +212,19 @@ body {
     background-color: var(--gray-menu-button-hover);
 }
 
-
 .item-title {
     color: var(--text);
     gap: 0.5rem;
 }
 
-.item-title h3 {
+.item-title h1 {
     font-weight: 500;
     font-size: 14px;
     color: var(--text);
     transition: all 0.2s ease-in-out;
 }
 
-.item-title:hover{
+.item-title:hover {
     color: var(--primary);
 }
 
@@ -290,7 +279,6 @@ body {
     background-color: var(--primary-darker);
 }
 
-
 .burger-menu {
     display: none;
     outline: none;
@@ -299,8 +287,11 @@ body {
     background-color: transparent;
 }
 
+.logoNav{
+    display: none;
+}
 
-@media (max-width: 44rem) {
+@media only screen and (max-width: 768px) {
     .hide {
         display: none;
     }
@@ -326,10 +317,22 @@ body {
         outline: 1px solid var(--primary);
     }
 
-
     .burger-menu svg {
         height: 1.5rem;
         stroke: var(--gray-menu-button);
         width: 1.5rem;
+    }
+
+    .navigation.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--navbar-height);
+        left: 0;
+        max-width: 100%;
+        background-color: var(--background);
+        padding: 5%;
+
+        border: var(--primary) 1px solid;
     }
 }

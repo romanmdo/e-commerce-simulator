@@ -12,7 +12,7 @@
   --primary: #0f5aa1;
   --primary-dark: #17223b;
   --botom-bg: #0a152f;
-  --accent: #5d88a4;
+  --accent: #0f5aa1;
   --border-primary: #eeecec;
   --text: #ffffff;
   --secondary: #2E2E2E;
@@ -37,7 +37,6 @@
 
 .papa {
   display: inline-flex;
-  flex-direction: row;
   flex-wrap: wrap; }
 
 .hijo {
@@ -75,6 +74,21 @@
 
 .hijo img:hover {
   transform: scale(1.15); }
+
+.cta-button {
+  margin-top: 2%;
+  padding: 5%;
+  cursor: pointer;
+  line-height: 2.5rem;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  transition: all 550ms cubic-bezier(0.36, 0.63, 0.5, 0.73); }
+
+.cta-button:hover {
+  box-shadow: 0 0 0 2px var(--accent);
+  color: var(--accent);
+  border-radius: 3%; }
 
 .button-glow {
   display: inline-flex;
@@ -126,35 +140,21 @@
   100% {
     background-position: 0 0; } }
 @media only screen and (max-width: 720px) {
+  .papa {
+    display: flex;
+    flex-wrap: wrap; }
+
   .hijo {
-    width: 100rem;
+    max-width: 40%;
+    height: auto;
     margin: 3% auto;
-    text-align: center;
-    height: auto; }
+    padding: 2%; }
     .hijo .hijo img {
       max-width: 100%;
       height: auto;
-      margin: 5% 5%; } }
-.cta-button {
-  /*
-      outline: 1px solid;
-      color: white;
-      outline-color: white;
-  */
-  margin-top: 2%;
-  padding: 5%;
-  cursor: pointer;
-  line-height: 2.5rem;
-  max-width: 100%;
-  position: relative;
-  display: flex;
-  transition: all 550ms cubic-bezier(0.36, 0.63, 0.5, 0.73); }
-
-.cta-button:hover {
-  box-shadow: 0 0 0 2px var(--accent);
-  background-color: var(--background2);
-  outline-color: #490cff;
-  outline-offset: 15px;
-  color: var(--accent); }
+      margin: 5% 5%; }
+    .hijo .hijo-carro {
+      display: block;
+      max-width: 30%; } }
 
 /*# sourceMappingURL=section.css.map */

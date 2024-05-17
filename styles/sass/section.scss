@@ -14,7 +14,7 @@
     --primary-dark: #17223b;
     --botom-bg: #0a152f;
 
-    --accent: #5d88a4;
+    --accent: #0f5aa1;
     
     
     --border-primary: #eeecec;
@@ -47,8 +47,6 @@
 
 .papa{ 
     display: inline-flex;
-    flex-direction: row;
-    
     flex-wrap: wrap;
 }
 
@@ -59,15 +57,12 @@
     text-align: center;
     max-width: 20%;
     height: auto;
-
     padding: 1%;
     margin-left: 4%;
     margin-top: 2%;
-
     background-color: var(--bg);
     color: var(--text);
     font-size: 1em; 
-
     opacity: 100%;
     border: 2px var(--primary) solid;
 }
@@ -95,6 +90,25 @@
 
 .hijo img:hover {
     transform: scale(1.15);
+}
+
+.cta-button {
+    margin-top: 2%;
+    padding: 5%;
+    cursor: pointer;
+    line-height: 2.5rem;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    transition: all 550ms cubic-bezier(
+        .36, .63, .5, .73
+    );
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 0 2px var(--accent);
+    color: var(--accent);
+    border-radius: 3%;
 }
 
 .button-glow {
@@ -161,53 +175,27 @@
     }
 }
 
-@media only screen and (max-width: 720px) { // Mediaquery, ajustes de tamaño en pantallas mas chicas!
-    .hijo{ 
-        width: 100rem;
-        margin: 3% auto;
-        text-align: center;
+@media only screen and (max-width: 720px) {
+    .papa{ 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .hijo{
+        max-width: 40%;
         height: auto;
+        margin: 3% auto;
+        padding: 2%;
         
         .hijo img{ 
             max-width: 100%;
             height: auto;
             margin: 5% 5%;
         }
+
+        .hijo-carro{
+            display: block;
+            max-width: 30%;
+        }
     }
 }
-
-.cta-button {
-/*
-    outline: 1px solid;
-    color: white;
-    outline-color: white;
-*/
-    margin-top: 2%;
-    padding: 5%;
-
-    cursor: pointer;
-
-    line-height: 2.5rem;
-
-    max-width: 100%;
-
-
-    position: relative;
-
-    display: flex;
-
-    transition: all 550ms cubic-bezier(
-        .36, .63, .5, .73
-    );
-}
-
-.cta-button:hover {
-    box-shadow: 0 0 0 2px var(
-        --accent
-    );
-    background-color: var(--background2);
-    outline-color: rgb(73, 12, 255);
-    outline-offset: 15px;
-    color: var(--accent);
-}
-

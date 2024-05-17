@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!-- CEO -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- CEO -->
+
         <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
         <!-- BOOTSTRAP -->
 
         <!-- TAILWIND CSS -->
@@ -15,6 +21,7 @@
         <link href="./styles/css/header.css" type="text/css" rel="stylesheet">
         <link href="./styles/css/section.css" type="text/css" rel="stylesheet">
         <link href="./styles/css/footer.css" type="text/css" rel="stylesheet">
+        <script src="./scripts/header.js" defer></script>
         <!-- LOCAL FILES -->
 
         <link rel="shortcut icon" href="./assets/LOGO-1.png" />
@@ -28,59 +35,67 @@
                     <a href="#" title="Home" aria-label="home" class="logo">
                         <img src="./assets/LOGO-1.png" alt="logo">
                     </a>
-                    <nav>
+                    <!-- PROBANDO NAV RESPONSIVO BIEN PRECARIO -->
+                    <header class="header">
+                        <div class="menu__wrapper">
+                            <div class="logoNav">
+                                <img src="path/to/logo.png" alt="Logo">
+                            </div>
+                            <button class="burger-menu" aria-label="Toggle navigation">
+                                <svg viewBox="0 0 100 80" width="40" height="40">
+                                    <rect width="100" height="20"></rect>
+                                    <rect y="30" width="100" height="20"></rect>
+                                    <rect y="60" width="100" height="20"></rect>
+                                </svg>
+                            </button>
+                    <nav>                                
                         <ul class="navigation hide">
-                            <li>
+                            <li class="page-item">
                                 <button type="button">
                                     Categorias
-                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
-                                        <path
-                                            d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z">
-                                        </path>
-                                    </svg>
                                 </button>
                                 <div class="dropdown__wrapper">
                                     <div class="dropdown">
                                         <ul class="list-items-with-description">
                                             <li>
                                                 <div class="item-title">
-                                                    <h1> Hardware </h1>
-                                                    <p> Arma la mejor PC que puedas! </p>
+                                                    <h1>Hardware</h1>
+                                                    <p>Arma la mejor PC que puedas!</p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="item-title">
-                                                    <h1> Mouses </h1>
-                                                    <p> Apunta y dispara un click! </p>
+                                                    <h1>Mouses</h1>
+                                                    <p>Apunta y dispara un click!</p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="item-title">
-                                                    <h1> Auriculares </h1>
-                                                    <p> Y esos auris de virgo momo? </p>
-                                                </div>
+                                                    <h1>Auriculares</h1>
+                                                    <p>Y esos auris de virgo momo?</p>
+                                                </div>                                                
                                             </li>
                                             <li>
                                                 <div class="item-title">
-                                                    <h1> Teclados </h1>
-                                                    <p> ¿Mecanico o de membrana? </p>
+                                                    <h1>Teclados</h1>
+                                                    <p>¿Mecanico o de membrana?</p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="page-item">
                                 <a href="#devs" title="Developers">
                                     Todo nuestro catalogo!
                                 </a>
                             </li>
-                            <li>
+                            <li class="page-item">
                                 <a href="#about" title="Pricing">
                                     Sobre nosotros
                                 </a>
                             </li>
-                            <li>
+                            <li class="page-item">
                                 <a href="#contact" title="Docs">
                                     Contactanos!
                                 </a>
@@ -88,24 +103,14 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="action-buttons hide">
-                    <a href="#log-in" title="Log in" class="secondary">
-                        Inicia sesión
-                    </a>
-                    <a href="#sign-up" title="Sign up" class="primary">
-                        Registrate!
-                    </a>
-                </div>
-                <button aria-label="Open menu" class="burger-menu" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
-                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 6l16 0" />
-                        <path d="M4 12l16 0" />
-                        <path d="M4 18l16 0" />
-                    </svg>
-                </button>
+            </div>
+            <div class="action-buttons hide">
+                <a href="#log-in" title="Log in" class="secondary">
+                    Inicia sesión
+                </a>
+                <a href="#sign-up" title="Sign up" class="primary">
+                    Registrate!
+                </a>
             </div>
         </header>
         <h1 class="text"> Ultimas novedades! </h1>
@@ -115,7 +120,7 @@
                 <h1> Auris de momo </h1>
                 <h1 class="hijo-precio"> $912 </h1>
                 <div class='cta-button'>
-                    <img src="./assets/CARRITO.png" class="hijo-carro"> 
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
                     <h1> Agregar al carrito! </h1> 
                 </div>
             </article>
@@ -125,60 +130,80 @@
                 <img src="./assets/MOUSE-1.png" class="img">
                 <h1> Mouse del armin </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/TECLADO-1.png" class="img">
                 <h1> Teclado mecanico </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/GABINETE.png" class="img">
                 <h1> Gabinete nazi </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/AURIS-2.png" class="img">
                 <h1> Auris de momo 2 </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/MOUSE-2.png" class="img">
                 <h1> Mouse del armin 2 </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/TECLADO-2.png" class="img">
                 <h1> Teclado mecanico 2 </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
     
             <article class="hijo button-glow">
                 <img src="./assets/JUEGO-1.png" class="img">
                 <h1> Half-Life 1 en Argento </h1>
                 <h1 class="hijo-precio"> $912 </h1>
+                <div class='cta-button'>
+                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
+                    <h1> Agregar al carrito! </h1> 
+                </div>
             </article>
         </section>
         <footer class="footer">
-            <div>
+            <div class="footer-div col-sm-3 col-sm-3:w-32">
                 <h6> Copyright © 1999-2024 MercadoLibre S.R.L. </h6>
                 <h6> Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA </h6>
                 <a href="https://www.instagram.com/roman.mddo/" target="_blank"><img src="./assets/IG-LOGO.png" class="footer-img"></a>
                 <a href="https://twitter.com/rommann17" target="_blank"><img src="./assets/X-LOGO.png" class="footer-img"></a>
                 <a href="https://github.com/svnggggg/" target="_blank"><img src="./assets/GITHUB-LOGO.png" class="footer-img"></a>
                 <a href="#" target="_blank"><img src="./assets/LINKEDIN-LOGO.png" class="footer-img"></a>
-            </div>
-
-            <div class="footer-faq">
-                <h1> Section </h1>
-                <p> · Login </p>
-                <p> · Home </p>
-                <p> · About </p>
-                <p> · FAQs </p>
             </div>
         </footer>
     </body>
