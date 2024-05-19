@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- CEO -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!-- CEO -->
+<head>
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
-        <!-- BOOTSTRAP -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- TAILWIND CSS -->
-        <link rel="stylesheet" href="./styles/global.css" type="text/css">
-        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-        <!-- TAILWIND CSS -->
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="./styles/global.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
-        <!-- LOCAL FILES -->
-        <link href="./styles/css/header.css" type="text/css" rel="stylesheet">
-        <link href="./styles/css/section.css" type="text/css" rel="stylesheet">
-        <link href="./styles/css/footer.css" type="text/css" rel="stylesheet">
-        <script src="./scripts/header.js" defer></script>
-        <!-- LOCAL FILES -->
+    <!-- LOCAL FILES -->
+    <link href="./styles/css/header.css" type="text/css" rel="stylesheet">
+    <link href="./styles/css/section.css" type="text/css" rel="stylesheet">
+    <link href="./styles/css/footer.css" type="text/css" rel="stylesheet">
+    <script src="./scripts/header.js" defer></script>
 
-        <link rel="shortcut icon" href="./assets/LOGO-1.png" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-        <title> E-Comerce </title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="menu__wrapper">
-                <div class="menu__bar">
-                    <a href="#" title="Home" aria-label="home" class="logo">
-                        <img src="./assets/LOGO-1.png" alt="logo">
-                    </a>
-                    <!-- PROBANDO NAV RESPONSIVO BIEN PRECARIO -->
-                    <header class="header">
-                        <div class="menu__wrapper">
-                            <div class="logoNav">
-                                <img src="path/to/logo.png" alt="Logo">
-                            </div>
-                            <button class="burger-menu" aria-label="Toggle navigation">
-                                <svg viewBox="0 0 100 80" width="40" height="40">
-                                    <rect width="100" height="20"></rect>
-                                    <rect y="30" width="100" height="20"></rect>
-                                    <rect y="60" width="100" height="20"></rect>
-                                </svg>
-                            </button>
-                    <nav>                                
+    <link rel="shortcut icon" href="./assets/LOGO-1.png" />
+
+    <title>E-Commerce</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu__wrapper">
+            <div class="menu__bar">
+                <a href="#" title="Home" aria-label="home" class="logo">
+                    <img src="./assets/LOGO-1.png" alt="logo">
+                </a>
+                <div class="menu__wrapper">
+                    <div class="logoNav">
+                        <img src="path/to/logo.png" alt="Logo">
+                    </div>
+                    <button class="burger-menu" aria-label="Toggle navigation">
+                        <svg viewBox="0 0 100 80" width="40" height="40">
+                            <rect width="100" height="20"></rect>
+                            <rect y="30" width="100" height="20"></rect>
+                            <rect y="60" width="100" height="20"></rect>
+                        </svg>
+                    </button>
+                    <nav>
                         <ul class="navigation hide">
                             <li class="page-item">
-                                <button type="button">
-                                    Categorias
-                                </button>
+                                <button type="button">Categorias</button>
                                 <div class="dropdown__wrapper">
                                     <div class="dropdown">
                                         <ul class="list-items-with-description">
@@ -73,7 +68,7 @@
                                                 <div class="item-title">
                                                     <h1>Auriculares</h1>
                                                     <p>Y esos auris de virgo momo?</p>
-                                                </div>                                                
+                                                </div>
                                             </li>
                                             <li>
                                                 <div class="item-title">
@@ -86,125 +81,148 @@
                                 </div>
                             </li>
                             <li class="page-item">
-                                <a href="#devs" title="Developers">
-                                    Todo nuestro catalogo!
-                                </a>
+                                <a href="#devs" title="Developers">Todo nuestro catalogo!</a>
                             </li>
                             <li class="page-item">
-                                <a href="#about" title="Pricing">
-                                    Sobre nosotros
-                                </a>
+                                <a href="#about" title="Pricing">Sobre nosotros</a>
                             </li>
                             <li class="page-item">
-                                <a href="#contact" title="Docs">
-                                    Contactanos!
-                                </a>
+                                <a href="#contact" title="Docs">Contactanos!</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="action-buttons hide">
-                <a href="#log-in" title="Log in" class="secondary">
-                    Inicia sesión
-                </a>
-                <a href="#sign-up" title="Sign up" class="primary">
-                    Registrate!
-                </a>
+                <a href="#log-in" title="Log in" class="secondary">Inicia sesión</a>
+                <a href="#sign-up" title="Sign up" class="primary">Registrate!</a>
             </div>
-        </header>
-        <h1 class="text"> Ultimas novedades! </h1>
-        <section class="papa">    
-            <article class="hijo button-glow">
-                <img src="./assets/AURIS-1.png" class="img">
-                <h1> Auris de momo </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-    
-            <article class="hijo button-glow">
-                <img src="./assets/MOUSE-1.png" class="img">
-                <h1> Mouse del armin </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/TECLADO-1.png" class="img">
-                <h1> Teclado mecanico </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/GABINETE.png" class="img">
-                <h1> Gabinete nazi </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/AURIS-2.png" class="img">
-                <h1> Auris de momo 2 </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/MOUSE-2.png" class="img">
-                <h1> Mouse del armin 2 </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/TECLADO-2.png" class="img">
-                <h1> Teclado mecanico 2 </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-    
-            <article class="hijo button-glow">
-                <img src="./assets/JUEGO-1.png" class="img">
-                <h1> Half-Life 1 en Argento </h1>
-                <h1 class="hijo-precio"> $912 </h1>
-                <div class='cta-button'>
-                    <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro"> 
-                    <h1> Agregar al carrito! </h1> 
-                </div>
-            </article>
-        </section>
-        <footer class="footer">
-            <div class="footer-div col-sm-3 col-sm-3:w-32">
-                <h6> Copyright © 1999-2024 MercadoLibre S.R.L. </h6>
-                <h6> Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA </h6>
-                <a href="https://www.instagram.com/roman.mddo/" target="_blank"><img src="./assets/IG-LOGO.png" class="footer-img"></a>
-                <a href="https://twitter.com/rommann17" target="_blank"><img src="./assets/X-LOGO.png" class="footer-img"></a>
-                <a href="https://github.com/svnggggg/" target="_blank"><img src="./assets/GITHUB-LOGO.png" class="footer-img"></a>
-                <a href="#" target="_blank"><img src="./assets/LINKEDIN-LOGO.png" class="footer-img"></a>
+        </div>
+    </header>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/CARROUSEL-1.jpg" alt="Intel" class="d-block w-100">
             </div>
-        </footer>
-    </body>
+            <div class="carousel-item">
+                <img src="./assets/CARROUSEL-2.jpg" alt="Nvidia" class="d-block w-100">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <h1 class="text"> Ultimas novedades!: </h1>
+
+    <section class="papa">
+        <article class="hijo button-glow">
+            <img src="./assets/AURIS-1.png" class="img">
+            <h1>Auris de momo</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/MOUSE-1.png" class="img">
+            <h1>Mouse del armin</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/TECLADO-1.png" class="img">
+            <h1>Teclado mecanico</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/GABINETE.png" class="img">
+            <h1>Gabinete nazi</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/AURIS-2.png" class="img">
+            <h1>Amd Ryzen 9 7900X3D</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/MOUSE-2.png" class="img">
+            <h1>Mouse del armin 2</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/TECLADO-2.png" class="img">
+            <h1>Teclado mecanico 2</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+
+        <article class="hijo button-glow">
+            <img src="./assets/JUEGO-1.png" class="img">
+            <h1>Intel I9-9900K 3.6GHZ</h1>
+            <h1 class="hijo-precio">$912</h1>
+            <div class="cta-button">
+                <img src="./assets/CARRO-COMPRAS.svg" class="hijo-carro">
+                <h1>Agregar al carrito!</h1>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="footer-div col-sm-3 col-sm-3:w-32">
+            <h6>Copyright © 1999-2024 MercadoLibre S.R.L.</h6>
+            <h6>Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</h6>
+            <a href="https://www.instagram.com/roman.mddo/" target="_blank">
+                <img src="./assets/IG-LOGO.png" class="footer-img">
+            </a>
+            <a href="https://twitter.com/rommann17" target="_blank">
+                <img src="./assets/X-LOGO.png" class="footer-img">
+            </a>
+            <a href="https://github.com/svnggggg/" target="_blank">
+                <img src="./assets/GITHUB-LOGO.png" class="footer-img">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./assets/LINKEDIN-LOGO.png" class="footer-img">
+            </a>
+        </div>
+    </footer>
+</body>
 </html>

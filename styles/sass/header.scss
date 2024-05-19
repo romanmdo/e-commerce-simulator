@@ -13,11 +13,6 @@
     --glow-size: 0.5rem;
 }
 
-@font-face {
-    font-family: 'font1';
-    src: url('../../fonts/Roboto-Medium.ttf') format('truetype'); 
-}
-
 * {
     font-family: "font1", sans-serif;
     font-optical-sizing: auto;
@@ -292,6 +287,22 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .action-buttons {
+        display: flex;
+        max-width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+
+    .list-items-with-description{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        background-color: var(--background);
+        animation: fadeIn 0.2s ease-in-out;
+    }
+
     .hide {
         display: none;
     }
@@ -332,7 +343,6 @@ body {
         max-width: 100%;
         background-color: var(--background);
         padding: 5%;
-
         border: var(--primary) 1px solid;
     }
 }
