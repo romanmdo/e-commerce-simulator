@@ -15,6 +15,7 @@
     --background: #17223b;
     --primary: #0f5aa1;
     --primary-dark: #17223b;
+    --primary-dark2: #141a70;
     --botom-bg: #0a152f;
 
     --accent: #0f5aa1;
@@ -42,8 +43,53 @@
     border: 3px solid #2E2E2E;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transform: scale(1.2); /* Agrandar al pasar el ratón */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right,
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
 .text{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 1%;
     color: white;
     font-weight: bold;
@@ -59,7 +105,7 @@
     flex-wrap: wrap;
 }
 
-.hijo{ 
+.hijo, .hijo2{ 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -69,27 +115,28 @@
     padding: 1%;
     margin-left: 4%;
     margin-top: 2%;
-    background-color: var(--bg);
     color: var(--text);
     font-size: 1em; 
     opacity: 100%;
     border: 2px var(--primary) solid;
+
+    background-color: var(--bg);
 }
 
 .hijo-precio{
     font-size: 1.2rem;
 }
 
-.hijo div h1{
-    margin-top: 3%;
+.hijo div h1, .hijo2 div h1{
+    margin-top: 5%;
 }
 
-.hijo div img{
+.hijo div img, .hijo2 div img{
     max-width: 20%;
     height: auto;
 }
 
-.hijo img{
+.hijo img, .hijo2 img{
     max-width: 60%;
     height: auto;
     margin: 5% 5%;
@@ -97,7 +144,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.hijo img:hover {
+.hijo img:hover, .hijo2 img:hover{
     transform: scale(1.15);
 }
 
