@@ -254,4 +254,17 @@
             max-width: 30%;
         }
     }
+
+    .hijo2{
+        max-width: 40%;
+        height: auto;
+        margin: 3% auto;
+        padding: 2%;
+
+        .hijo2 img{ 
+            max-width: 100%;
+            height: auto;
+            margin: 5% 5%;
+        }
+    }
 }
