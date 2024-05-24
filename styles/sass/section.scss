@@ -12,18 +12,19 @@
 }
 
 :root {
-    --background: #17223b;
+    --background: #212735;
     --primary: #0f5aa1;
     --primary-dark: #17223b;
     --primary-dark2: #141a70;
-    --botom-bg: #0a152f;
+
+    // ### COLOR CAJAS ###
+    --botom-bg: #242428;
+    --botom-bg2: #262632;
+    // ### COLOR CAJAS ###
 
     --accent: #0f5aa1;
-    
-    
     --border-primary: #eeecec;
     --text: #ffffff;
-    
     --secondary: #2E2E2E;
     --gray-border: #3E3E3E;
     --gray-border-hover: #505050;
@@ -32,15 +33,13 @@
     --navbar-height: 4rem;
     --gray-text-hover: #8F8F8F;
     --gray-icon: #A0A0A0;
-    --bg: #060D23;
-    
     --glow-size: 0.5rem;
 }
 
-.carousel{
+.carousel {
     margin-top: 1%;
     opacity: 70%;
-    border: 3px solid #2E2E2E;
+    border: 1px solid #2E2E2E;
 }
 
 .carousel-inner {
@@ -88,7 +87,7 @@
     transform: scale(0.95);
 }
 
-.text{
+.text {
     margin-top: 2%;
     margin-left: 1%;
     color: white;
@@ -96,16 +95,17 @@
     transition: all 0.2s ease-in-out;
 }
 
-.text:hover{
+.text:hover {
     color: var(--primary);
 }
 
-.papa{ 
+.papa { 
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-.hijo, .hijo2{ 
+.hijo, 
+.hijo2 { 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -120,23 +120,26 @@
     opacity: 100%;
     border: 2px var(--primary) solid;
 
-    background-color: var(--bg);
+    box-shadow: 5px 5px 5px rgb(16, 16, 16);
 }
 
-.hijo-precio{
+.hijo-precio {
     font-size: 1.2rem;
 }
 
-.hijo div h1, .hijo2 div h1{
+.hijo div h1,
+.hijo2 div h1 {
     margin-top: 5%;
 }
 
-.hijo div img, .hijo2 div img{
+.hijo div img, 
+.hijo2 div img {
     max-width: 20%;
     height: auto;
 }
 
-.hijo img, .hijo2 img{
+.hijo img, 
+.hijo2 img {
     max-width: 60%;
     height: auto;
     margin: 5% 5%;
@@ -144,7 +147,8 @@
     transition: all 0.2s ease-in-out;
 }
 
-.hijo img:hover, .hijo2 img:hover{
+.hijo img:hover, 
+.hijo2 img:hover {
     transform: scale(1.15);
 }
 
@@ -167,7 +171,8 @@
     border-radius: 3%;
 }
 
-.button-glow {
+.button-glow, 
+.button-glow2 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -177,11 +182,13 @@
     transition: all 0.5s;
 }
 
-.button-glow h1{
+.button-glow h1, 
+.button-glow2 h1 {
     display: block;
 }
 
-.button-glow:before {
+.button-glow:before,
+.button-glow2:before {
     content: '';
     background: linear-gradient(to right, #B881FF, #A963F7,
             #8bff5d, #ffc300, #B881FF, #A963F7,
@@ -202,20 +209,34 @@
     background: var(--botom-bg);
 }
 
-.button-glow:hover:before {
+.button-glow2:active {
+    background: var(--botom-bg2);
+}
+
+.button-glow:hover:before,
+.button-glow2:hover:before{
     opacity: 1;
 }
 
-.button-glow:after {
+.button-glow:after,
+.button-glow2:after {
     z-index: -1;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--botom-bg);
     left: 0;
     top: 0;
 }
+
+.button-glow:after {
+    background: var(--botom-bg);
+}
+
+.button-glow2:after {
+    background: var(--botom-bg2);
+}
+
 
 @keyframes glow {
     0% {
