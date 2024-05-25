@@ -22,6 +22,12 @@ body {
     justify-content: center;
 }
 
+.log{
+    display: inline-flex;
+    max-width: 20%;
+    filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(70%) contrast(100%);
+}
+
 .menu__wrapper {
     display: flex;
     justify-content: space-between;
@@ -36,16 +42,6 @@ body {
 .menu__bar {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 4rem;
 }
 
 .navigation {
@@ -221,7 +217,8 @@ body {
 /* login sign-up buttons */
 
 .action-buttons {
-    display: flex;
+    max-width: 20%;
+    display: inline-flex;
     gap: 0.5rem;
     align-items: center;
     flex-wrap: nowrap;
@@ -274,8 +271,7 @@ body {
 @media only screen and (max-width: 768px) {
     .action-buttons {
         display: flex;
-        max-width: 100%;
-
+        max-width: 60%;
         flex-wrap: wrap;
     }
 
@@ -329,5 +325,10 @@ body {
         background-color: var(--background);
         padding: 5%;
         border: var(--primary) 1px solid;
+    }
+
+    .log{
+        display: inline-flex;
+        max-width: 20%;
     }
 }
