@@ -1,3 +1,5 @@
+// ## Responsive
+
 document.addEventListener("DOMContentLoaded", function() {
     const burgerMenu = document.querySelector(".burger-menu");
     const navigation = document.querySelector(".navigation");
@@ -6,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         navigation.classList.toggle("show");
     });
 });
+
+// ## Validacion de formulario
 
 let loginForm = document.querySelector(".my-form");
 

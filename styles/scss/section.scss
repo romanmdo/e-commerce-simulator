@@ -104,9 +104,7 @@
     flex-wrap: wrap;
 }
 
-.hijo, 
-.hijo2 { 
-    display: flex;
+.hijo, .hijo2 { 
     flex-direction: column;
     align-items: center; 
     text-align: center;
@@ -119,7 +117,6 @@
     font-size: 1em; 
     opacity: 100%;
     border: 2px var(--primary) solid;
-
     box-shadow: 5px 5px 5px rgb(16, 16, 16);
 }
 
@@ -152,11 +149,33 @@
     transform: scale(1.15);
 }
 
-.cta-button {
+.hijo figcaption {
+    display: none;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    align-items: end;
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.945) 50%,
+        rgba(0, 0, 0, 0.219) 100%
+    );
+    color: white;
+    padding: 5%;
+    transition: all 0.3s ease;
+    opacity: 0.7; /* Cambio añadido */
+}
+
+.hijo:hover figcaption {
+    display: flex;
+    opacity: 1; /* Cambio añadido */
+}
+
+.cta-button{
     margin-top: 2%;
     padding: 5%;
     cursor: pointer;
-    line-height: 2.5rem;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -166,9 +185,7 @@
 }
 
 .cta-button:hover {
-    box-shadow: 0 0 0 2px var(--accent);
     color: var(--accent);
-    border-radius: 3%;
 }
 
 .button-glow, 
