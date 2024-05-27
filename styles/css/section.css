@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Estilos CSS */
 *,
 *::before,
 *::after {
@@ -15,8 +16,10 @@
   --primary: #0f5aa1;
   --primary-dark: #17223b;
   --primary-dark2: #141a70;
+  /* COLOR CAJAS */
   --botom-bg: #242428;
   --botom-bg2: #262632;
+  /* COLOR CAJAS */
   --accent: #0f5aa1;
   --border-primary: #eeecec;
   --text: #ffffff;
@@ -32,7 +35,7 @@
 
 .carousel {
   margin-top: 1%;
-  opacity: 70%;
+  opacity: 0.7;
   border: 1px solid #2E2E2E; }
 
 .carousel-inner {
@@ -98,8 +101,8 @@
   margin-top: 2%;
   color: var(--text);
   font-size: 1em;
-  opacity: 100%;
-  border: 2px var(--primary) solid;
+  opacity: 1;
+  border: 2px solid var(--primary);
   box-shadow: 5px 5px 5px #101010; }
 
 .hijo-precio {
@@ -119,7 +122,7 @@
   max-width: 60%;
   height: auto;
   margin: 5% 5%;
-  opacity: 60%;
+  opacity: 0.6;
   transition: all 0.2s ease-in-out; }
 
 .hijo img:hover,
@@ -132,17 +135,17 @@
   width: 100%;
   height: 100%;
   align-items: end;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.945) 50%, rgba(0, 0, 0, 0.219) 100%);
   color: white;
-  padding: 5%;
-  transition: all 0.3s ease;
   opacity: 0.7;
-  /* Cambio añadido */ }
+  transition: all 10.3s ease; }
 
 .hijo:hover figcaption {
   display: flex;
   opacity: 1;
-  /* Cambio añadido */ }
+  cursor: pointer;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.945) 50%, rgba(0, 0, 0, 0.219) 100%);
+  color: var(--accent);
+  padding: 5%; }
 
 .cta-button {
   margin-top: 2%;
@@ -228,22 +231,22 @@
     height: auto;
     margin: 3% auto;
     padding: 2%; }
-    .hijo .hijo img {
-      max-width: 100%;
-      height: auto;
-      margin: 5% 5%; }
-    .hijo .hijo-carro {
-      display: block;
-      max-width: 30%; }
 
-  .hijo2 {
-    max-width: 40%;
+  .hijo img {
+    max-width: 100%;
     height: auto;
-    margin: 3% auto;
-    padding: 2%; }
-    .hijo2 .hijo2 img {
-      max-width: 100%;
-      height: auto;
-      margin: 5% 5%; } }
+    margin: 5% 5%; }
+
+  .hijo-carro {
+    display: block;
+    max-width: 30%; }
+
+  .hijo figcaption {
+    display: none;
+    position: absolute; }
+
+  .hijo:hover figcaption {
+    display: flex;
+    opacity: 1; } }
 
 /*# sourceMappingURL=section.css.map */
