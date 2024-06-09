@@ -90,7 +90,7 @@
 .text {
     margin-top: 2%;
     margin-left: 1%;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     transition: all 0.2s ease-in-out;
 }
@@ -154,7 +154,7 @@
     width: 100%;
     height: 100%;
     align-items: end;
-    color: white;
+    color: var(--text);
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease-in-out;
@@ -271,14 +271,14 @@
         flex-wrap: wrap;
     }
     
-    .hijo{
+    .hijo, .hijo2{
         max-width: 40%;
         height: auto;
         margin: 3% auto;
         padding: 2%;
     }
 
-    .hijo img{ 
+    .hijo img, .hijo2 img{ 
         max-width: 100%;
         height: auto;
         margin: 5% 5%;

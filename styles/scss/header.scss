@@ -14,7 +14,6 @@ body {
 
 .logo{
     max-width: 20%;
-
 }
 
 .log{
@@ -27,6 +26,12 @@ body {
     display: inline-flex;
     max-width: 30%;
     filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(70%) contrast(100%);
+}
+
+.tema{
+    max-width: 70%;
+    background-color: var(--background);
+    //border: rgb(0, 38, 255) 3px solid;
 }
 
 .menu__wrapper {
@@ -234,9 +239,8 @@ body {
 }
 
 .secondary {
-    background: none;
     color: var(--text);
-    outline: none;
+    width: 200px;
     border: 1px solid var(--gray-border);
     border-radius: 0.5rem;
 }
@@ -275,7 +279,10 @@ body {
         max-width: 60%;
         flex-wrap: wrap;
     }
-
+    
+    .tema{
+        max-width: 40%;
+    }
 
     .list-items-with-description{
         display: flex;
