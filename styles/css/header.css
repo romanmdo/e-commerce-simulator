@@ -20,12 +20,23 @@ body {
 
 .carrito {
   display: inline-flex;
-  max-width: 30%;
+  max-width: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(70%) contrast(100%); }
 
+.carrito:hover {
+  transform: scale(1.1); }
+
 .tema {
-  max-width: 70%;
-  background-color: var(--background); }
+  max-width: 50%;
+  margin-left: 10%;
+  background-color: var(--background);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+
+.tema:hover {
+  transform: scale(1.7); }
 
 .menu__wrapper {
   display: flex;
@@ -236,7 +247,15 @@ body {
     flex-wrap: wrap; }
 
   .tema {
-    max-width: 40%; }
+    max-width: 20%; }
+
+  .carrito {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 20%; }
 
   .list-items-with-description {
     display: flex;

@@ -74,6 +74,19 @@
   opacity: 0;
   transform: scale(0.95); }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+#buscador {
+  cursor: pointer;
+  margin: 2%;
+  padding: 1%;
+  max-width: 100%;
+  font-size: 16px; }
+
 .text {
   margin-top: 2%;
   margin-left: 1%;
